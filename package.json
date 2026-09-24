@@ -1,0 +1,44 @@
+{
+  "name": "tfuploads",
+  "version": "1.0.0",
+  "description": "Brefs !",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.556.0",
+    "@aws-sdk/lib-storage": "^3.556.0",
+    "@aws-sdk/s3-request-presigner": "^3.1116.0",
+    "busboy": "^1.6.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "mime-types": "^2.1.35",
+    "mongoose": "^8.3.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.12.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [
+    "stream",
+    "upload",
+    "r2",
+    "cloudflare",
+    "s3",
+    "postgres",
+    "tf-stream"
+  ],
+  "license": "MIT"
+}
